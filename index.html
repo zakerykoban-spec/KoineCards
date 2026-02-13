@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Koine Cards</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Κάρτες</div>
+    <button id="backBtn" class="btn" hidden>←</button>
+  </header>
+
+  <main class="wrap">
+    <section id="domainView" class="panel">
+      <h1 class="title">ΤΟΜΕΙΣ</h1>
+      <div id="domainList" class="list"></div>
+    </section>
+
+    <section id="cardListView" class="panel" hidden>
+      <h1 id="domainTitle" class="title"></h1>
+      <div id="cardList" class="list"></div>
+    </section>
+
+    <section id="cardView" class="panel" hidden>
+      <div class="cardHead">
+        <div id="cardTitle" class="cardTitle"></div>
+        <div id="cardMeta" class="meta"></div>
+      </div>
+      <pre id="cardBody" class="cardBody"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
